@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweet Bakery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff0f5;
+    color: #333;
+}
+header{
+    background-color: #fff0f5;
+    color: #ff4da6;
+    text-align: center;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffdde1;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+nav h2 {
+    color: #d63384;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li {
+    cursor: pointer;
+    position: relative;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #d63384;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #d63384;
+}
+
+.hero p {
+    color: #777;
+}
+
+/* GRID */
+.container {
+    padding: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(214,51,132,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* TEXT */
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h3 {
+    color: #d63384;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.price {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #ff4da6;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #d63384;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #b03170;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Sweet Bakery</h2>
+    <ul>
+        <li>Home</li>
+        <li>Menu</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1> Chalista Bakery</h1>
+    <p>Roti lembut, fresh setiap hari 🍞</p>
+</div>
+
+<div class="container">
+    <div class="grid">
+
+        <div class="card">
+            <img src="Gambar Roti Coklat.jpeg">
+            <div class="card-content">
+                <h3>Roti Coklat</h3>
+                <p>Isi coklat lumer</p>
+                <div class="price">Rp 10.000</div>
+                <a href="#" class="btn">Beli</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Gambar Donat Strawberry.jpeg">
+            <div class="card-content">
+                <h3>Donat Strawberry</h3>
+                <p>Manis & lembut</p>
+                <div class="price">Rp 8.000</div>
+                <a href="#" class="btn">Beli</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Gambar Croissant.jpeg">
+            <div class="card-content">
+                <h3>Croissant</h3>
+                <p>Renyah & buttery</p>
+                <div class="price">Rp 15.000</div>
+                <a href="#" class="btn">Beli</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Gambar Kue Tart Mini.jpeg">
+            <div class="card-content">
+                <h3>Kue Tart Mini</h3>
+                <p>Manis & cantik</p>
+                <div class="price">Rp 20.000</div>
+                <a href="#" class="btn">Beli</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+© 2026 Sweet Bakery
+</footer>
+
+</body>
+</html>
